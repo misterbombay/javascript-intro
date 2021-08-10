@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+
+     <body>
+
+        <i id="changethumbicon" onclick="thumbupdown()" class="fa fa-thumbs-up" style="font-size:48px;color:blue"></i> 
+
+        <script>
+            var thumbup="fa fa-thumbs-up";
+            var thumbdown = "fa fa-thumbs-down";
+
+            function thumbupdown(){
+                if(document.getElementById("changethumbicon").className=="fa fa-thumbs-up"){
+                    document.getElementById("changethumbicon").className=thumbdown;
+                }
+                else
+                document.getElementById("changethumbicon").className=thumbup;
+                
+                
+            }
+
+        </script>
+
+     </body>
+</html>
